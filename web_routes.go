@@ -26,7 +26,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func query(city string) (weatherData, error) {
-	resp, err := http.Get("http://api.openweathermap.org/data/2.5/weather?APPID=4c8e2518c1b45b6ed332e7daabf3cea5&q=" + city)
+	resp, err := http.Get("http://api.openweathermap.org/data/2.5/weather?APPID=4cdce80ab8364c313f8fcc9addc426e1&q=" + city)
 	if err != nil {
 		return weatherData{}, err
 	}
